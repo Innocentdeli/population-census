@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Census</title>
+       
+    {% load bootstrap5 %}
+
+    {% bootstrap_css %}
+
+    {% bootstrap_javascript %}
+
+    {% bootstrap_messages %}
+    <link rel="stylesheet" href="{% static 'styles/add.css'%}">
+</head>
+<body>
+    <form action="addrecord/" method="post" class="container ">
+        {% csrf_token %}
+        <div class="row " style="background-color: rgba(240, 248, 255, 0.68); height: 400px;">
+            <h1 style="width:50%; margin-left: 25%; margin-bottom: 30px; color: rgb(49, 49, 43); ">Add Members</h1>
+
+            <div class="input-group flex-nowrap " style="width:50%; margin-left: 25%; margin-bottom: 30px;">
+                <span class="input-group-text" id="addon-wrapping">First Name</span>
+                <input name="firstname" type="text" class="form-control" placeholder="Innocent" aria-label="Innocent" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap" style="width:50%; margin-left: 25%; margin-bottom: 30px;">
+                <span class="input-group-text" id="addon-wrapping">Last Name </span>
+                <input name="lastname" type="text" class="form-control" placeholder="Deli" aria-label="Deli" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap" style="width:50%; margin-left: 25%; margin-bottom: 30px;">
+                <span class="input-group-text" id="addon-wrapping">Age</span>
+                <input name="age" type="tel" class="form-control" placeholder="20" aria-label="20" aria-describedby="addon-wrapping">
+            </div>
+
+            <div class="input-group flex-nowrap" style="width:50%; margin-left: 25%; margin-bottom: 30px; ">
+                <span class="input-group-text" id="addon-wrapping">Gender</span>
+                <div class="form-check form-check-inline" style="margin-left: 13px;" >
+                    <input class="form-check-input"  style="margin-top: 12px;" type="radio" name="age" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" style="margin-top: 7px;" for="inlineRadio1">Male</label>
+                </div>
+
+                <div class="form-check form-check-inline" >
+                    <input class="form-check-input" style="margin-top: 12px;" type="radio" name="age" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" style="margin-top: 7px;" for="inlineRadio2">Female</label>
+                </div>
+            </div>
+            
+            <div style="width:50%; margin-left: 25%; margin-bottom: 30px; ">
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </div>
+            
+        </div>
+    </form>
+    <!-- <a href="/populationcensus">Back</a>
+    <a href="/populationcensus">View</a> -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Census App in Django</title>
+    <!-- <link href="{% static 'styles/welcome.css' %}" media="all"> -->
+    
+    {% load bootstrap5 %}
+
+    {% bootstrap_css %}
+
+    {% bootstrap_javascript %}
+
+    {% bootstrap_messages %}
+    <link rel="stylesheet" href="{% static 'styles/welcome.css'%}">
+  </head>
+  <body class="body">
+    <div class="bac">
+      <div class="container bg-success" id="main">
+        <h1 class="text-light " id="h1-in">Nigeria Population Census</h1>
+        <ul class="d-flex ">
+          <li class="list-unstyled mt-3"><a id="psh1" href="/populationcensus/index">View Census Record</a></li>
+          <li class="list-unstyled mt-3" ><a id="psh"  href="/populationcensus/add">Register a Member</a></li>
+        </ul>
+      </div>
+  </div>
+  </body>
+</html>

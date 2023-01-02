@@ -1,0 +1,45 @@
+body{
+    box-sizing: border-box;
+}
+
+.bac{
+    background-image:  linear-gradient(to left bottom, rgba(10, 191, 170, 0.655), rgba(215, 215, 240, 0.666)), url(../images/nigeria-population-census.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+#h1-in{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px #101010;
+}
+
+#psh{
+    color: #fff;
+    margin-left: 42rem;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;  
+}
+
+#psh:hover{
+    border: 2px solid rgb(251, 248, 248);
+    background-color: rgb(36, 220, 140);
+}
+
+#psh1{
+    color: #fff;
+    /* margin-left: 45rem; */
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;  
+}
+
+#psh1:hover{
+    border: 2px solid rgb(251, 248, 248);
+    background-color: rgb(36, 220, 140);
+}
+
